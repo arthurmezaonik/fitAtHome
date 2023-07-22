@@ -1,0 +1,36 @@
+body{
+    background-color: blue;
+}
+
+:root {
+    --main-first-color: #538f3f;
+    --main-second-color:#ffa500;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,ul,ol,li{
+    color: #191919;
+}
+
+.bg-color-first{
+    background-color: var(--main-first-color);
+    color: white;
+}
+
+.bg-color-second{
+    background-color: var(--main-second-color);
+    color: white;
+}
+
+.text-color-first{
+    color: var(--main-first-color);
+}
+
+.text-color-second{
+    color: var(--main-second-color);
+}

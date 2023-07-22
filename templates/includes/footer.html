@@ -1,4 +1,10 @@
-<footer class="footer container-fluid mt-auto py-1 bg-gradient">
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static '/css/home/footer.css' %}">
+{% endblock %}
+
+<footer class="footer container-fluid mt-auto py-1 bg-gradient bg-color-second">
     <div class="footer__inner" style="width: 100%;max-width:800px; margin:0 auto;">
         <div class="row">
             <div class="col-12" style="display: flex; flex-direction: column; justify-content: center;">
@@ -14,7 +20,7 @@
                     <a class="social-btn " href="https://www.instagram.com/" target='_blank' rel="noopener"
                         aria-label="Visit my Instagram page"><i class="fab fa-instagram ms-3"></i></a>
                 </p>
-                <p class="m-0 text-center "><a class='social-btn ' href="https://www.privacypolicygenerator.info/live.php?token=g7nNWGm35To6Xk7Sbdvi427SvOlbvlgG" target="_blank">Privacy Policy</a></p>
+                <p class="m-0 text-center "><a class='social-btn ' href="https://www.privacypolicygenerator.info/live.php?token=g7nNWGm35To6Xk7Sbdvi427SvOlbvlgG" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
             </div>
         </div>
     </div>

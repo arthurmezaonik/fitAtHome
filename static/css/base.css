@@ -1,0 +1,39 @@
+:root {
+    --main-first-color: #538f3f;
+    --main-second-color:#ffa500;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: initial;
+    display: block;
+}
+
+.bg-color-first{
+    background-color: var(--main-first-color);
+    color: white;
+}
+
+.bg-color-second{
+    background-color: var(--main-second-color);
+    color: white;
+}
+
+.text-color-first,
+.text-color-second:hover,
+.text-color-second:focus{
+    color: var(--main-first-color);
+}
+
+.text-color-second,
+.text-color-first:hover,
+.text-color-first:focus{
+    color: var(--main-second-color);
+}

@@ -1,12 +1,13 @@
+{% load static %}
+
 <div class="row d-lg-none">
 
     <div class="col-4 p-0">
         <div class="list-inline-item w-100 dropdown">
-            <a class="nav-link" href="/" id="mobileNavbarDropdown" data-bs-toggle="dropdown"
+            <a class="nav-link text-color-second" href="/" id="mobileNavbarDropdown" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 <div class="text-center">
                     <div><i class="fas fa-user fa-lg"></i></div>
-                    <p class="my-0">Account</p>
                 </div>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="mobileNavbarDropdown">
@@ -23,11 +24,11 @@
 
     <div class="col-4 p-0">
         <div class="list-inline-item w-100">
-            <a class="nav-link" href="/">
+            <a class="nav-link text-color-second" href="/">
                 <div class="text-center">
                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                     <p class="my-0">
-                        $0.00
+                        
                     </p>
                 </div>
             </a>
@@ -37,21 +38,20 @@
 
     <div class="col-4 p-0">
         <div class="list-inline-item w-100">
-            <a class="nav-link d-block d-lg-none" href="/" id="mobileSearch" data-bs-toggle="dropdown"
+            <a class="nav-link d-block d-lg-none text-color-second" href="/" id="mobileSearch" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 <div class="text-center">
                     <div><i class="fas fa-search fa-lg"></i></div>
-                    <p class="my-0">Search</p>
                 </div>
             </a>
             <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobileSearch">
                 <form class="form" method="GET" action="/">
                     <div class="input-group w-100">
                         {% csrf_token %}
-                        <input class="form-control border border-black rounded-0" type="text" name="q"
+                        <input class="form-control border text-color-second rounded-0" type="text" name="q"
                             placeholder="Search">
                         <div class="input-group-append">
-                            <button class="btn" name='search_button'
+                            <button class="btn text-color-second" name='search_button'
                                 type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
@@ -68,7 +68,7 @@
 <div class="row d-lg-none">
     <div class="list-inline-item">
         <a class="navbar-brand m-auto" href="/">
-            Fit At Home
+            <img src="{% static 'images/logo.png' %}" alt="Fit At Home logo" width="170" height="170">
         </a>
     </div>
 </div>
