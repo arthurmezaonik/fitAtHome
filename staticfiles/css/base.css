@@ -1,7 +1,3 @@
-body{
-    background-color: blue;
-}
-
 :root {
     --main-first-color: #538f3f;
     --main-second-color:#ffa500;
@@ -13,8 +9,15 @@ body{
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,ul,ol,li{
-    color: #191919;
+.main{
+    min-height: calc(100vh - 56px - 72px);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: initial;
+    display: block;
 }
 
 .bg-color-first{
@@ -27,10 +30,14 @@ h1,h2,h3,h4,h5,h6,p,a,ul,ol,li{
     color: white;
 }
 
-.text-color-first{
+.text-color-first,
+.text-color-second:hover,
+.text-color-second:focus{
     color: var(--main-first-color);
 }
 
-.text-color-second{
+.text-color-second,
+.text-color-first:hover,
+.text-color-first:focus{
     color: var(--main-second-color);
 }

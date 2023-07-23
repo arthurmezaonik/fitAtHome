@@ -9,6 +9,23 @@
     box-sizing: border-box;
 }
 
+.main{
+    min-height: calc(100vh - 56px - 80px);
+}
+
+@media screen and(min-width:992px){
+    .main{
+        min-height: calc(100vh - 74px - 56px - 80px);
+    }
+}
+
+.page-width{
+    max-width: 1440px;
+    padding-right:5rem;
+    padding-left:5rem;
+    margin:0 auto;
+}
+
 img{
     max-width: 100%;
     height: auto;
