@@ -14,11 +14,9 @@ class Collection(models.Model):
 
 
 class Product(models.Model):
-    collection = models.ForeignKey(
+    collections = models.ManyToManyField(
         "Collection",
-        null=True,
-        blank=True,
-        on_delete=models.SET_NULL
+        blank=True
     )
     sku = models.CharField(max_length=254, null=True, blank=True)
     title = models.CharField(max_length=254)

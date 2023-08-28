@@ -11,4 +11,15 @@
 
 {% block content %}
     <h1>This is my product page</h1>
+
+    {% if products %}
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-2">
+    {% for product in products %}
+        {% include '../products/includes/product-card.html' with product=product %}
+    {% endfor %}
+    </div>
+    {% else %}
+    <p>No products</p>
+  
+    {% endif %}
 {% endblock %}
